@@ -2,7 +2,7 @@
 title: "如何将本地项目上传到Git或Gitee"
 date: 2023-05-22 15:12:35
 tags: Git
-categories: 实际操作
+categories: 随笔
 ---
 ### Git提交常用命令
 1、初始化git
