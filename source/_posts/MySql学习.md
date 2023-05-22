@@ -24,7 +24,9 @@ where age IS NOT NULL;
 ```java
  where gender = 'male' and gpa > '3.5';
 ```
+
 <!-- more -->
+
 6.找到学校为北大或GPA在3.7以上(不包括3.7)
 ```java
 where university = '北京大学' or gpa > '3.7';
