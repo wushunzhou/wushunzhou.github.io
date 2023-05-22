@@ -187,7 +187,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-05-22 15:12:35 / 修改时间：07:28:33" itemprop="dateCreated datePublished" datetime="2023-05-22T15:12:35+00:00">2023-05-22</time>
+              <time title="创建时间：2023-05-22 15:12:35 / 修改时间：07:31:36" itemprop="dateCreated datePublished" datetime="2023-05-22T15:12:35+00:00">2023-05-22</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -211,17 +211,14 @@
 
       
           <h3 id="Git提交常用命令"><a href="#Git提交常用命令" class="headerlink" title="Git提交常用命令"></a>Git提交常用命令</h3><p>1、初始化git<br>git init<br>2、将项目的所有文件添加到缓存中<br>git add .<br>3、将缓存中的文件Commit到git库<br>git commit -m “init”<br>4、将本地的库链接到远程仓库<br>git remote add origin 远程仓库地址复制代码<br>5、拉取远程仓库代码<br>git pull origin master<br>6、提交代码<br>git push origin master</p>
-<h3 id="遇到问题的解决方法"><a href="#遇到问题的解决方法" class="headerlink" title="遇到问题的解决方法"></a>遇到问题的解决方法</h3><p>1、fatal: remote origin already exists.</p>
-<ul>
-<li>解决方法：<br>先输入 git remote rm origin<br>再输入 git remote add origin 远程仓库地址复制代码</li>
-</ul>
-<p>2、git pull 失败 ,提示：fatal: refusing to merge unrelated histories</p>
-<ul>
-<li>解决方法：</li>
-<li>方案一<br>git pull origin master –allow-unrelated-histories<br>后面加上 –allow-unrelated-histories ， 把两段不相干的 分支进行强行合并<br>后面再push就可以了</li>
-<li>方案二<br>git push -f -u origin master 强推至远程服务器    上述方式会强制删除远程仓库中冲突代码，即删除创建的README.md文件，不推荐</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/05/22/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0Git%E6%88%96Gitee/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -254,7 +251,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/05/18/mysql_study/" class="post-title-link" itemprop="url">“MySql学习”</a>
+            <a href="/2023/05/18/mysql_study/" class="post-title-link" itemprop="url">MySql学习</a>
         </h2>
 
         <div class="post-meta">
@@ -271,7 +268,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-05-22 07:28:33" itemprop="dateModified" datetime="2023-05-22T07:28:33+00:00">2023-05-22</time>
+                <time title="修改时间：2023-05-22 07:31:36" itemprop="dateModified" datetime="2023-05-22T07:31:36+00:00">2023-05-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -302,30 +299,14 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">where age != <span class="string">&#x27;null&#x27;</span>;</span><br><span class="line">where age IS NOT NULL;</span><br></pre></td></tr></table></figure>
 <p>5.找到男性且GPA在3.5以上(不包括3.5)</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">where</span> <span class="variable">gender</span> <span class="operator">=</span> <span class="string">&#x27;male&#x27;</span> and gpa &gt; <span class="string">&#x27;3.5&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>6.找到学校为北大或GPA在3.7以上(不包括3.7)</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">where</span> <span class="variable">university</span> <span class="operator">=</span> <span class="string">&#x27;北京大学&#x27;</span> or gpa &gt; <span class="string">&#x27;3.7&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>7.找到学校为北大、复旦和山大的同学</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">where university <span class="title function_">in</span> <span class="params">(<span class="string">&#x27;北京大学&#x27;</span>,<span class="string">&#x27;复旦大学&#x27;</span>,<span class="string">&#x27;山东大学&#x27;</span>)</span>;</span><br></pre></td></tr></table></figure>
-<p>8.找到gpa在3.5以上(不包括3.5)的山东大学用户 或 gpa在3.8以上(不包括3.8)的复旦大学同学</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">where (gpa &gt; <span class="string">&#x27;3.5&#x27;</span> <span class="type">and</span> <span class="variable">university</span> <span class="operator">=</span> <span class="string">&#x27;山东大学&#x27;</span>) or (gpa &gt; <span class="string">&#x27;3.8&#x27;</span> <span class="type">and</span> <span class="variable">university</span> <span class="operator">=</span> <span class="string">&#x27;复旦大学&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<p>9.查看所有大学中带有北京的</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">where university like <span class="string">&#x27;%北京%&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>10.复旦大学学生gpa最高值是多少</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select <span class="title function_">Max</span><span class="params">(gpa)</span> from user_profile <span class="type">where</span> <span class="variable">university</span> <span class="operator">=</span> <span class="string">&#x27;复旦大学&#x27;</span>;</span><br><span class="line"><span class="type">where</span> <span class="variable">university</span> <span class="operator">=</span> <span class="string">&#x27;复旦大学&#x27;</span> order by gpa desc limit <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<p>11.男性用户有多少人以及他们的平均gpa是多少</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 平均 avg  取值位数 round 求总数 count</span></span><br><span class="line">select <span class="title function_">count</span><span class="params">(gender)</span> as male_num,round(avg(gpa),<span class="number">1</span>) as avg_gpa from user_profile <span class="type">where</span> <span class="variable">gender</span> <span class="operator">=</span> <span class="string">&#x27;male&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>12.现在运营想要对每个学校不同性别的用户活跃情况和发帖数量进行分析，请分别计算出每个学校每种性别的用户数、30天内平均活跃天数和平均发帖数量。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select gender,university,count(device_id) as user_num,avg(active_days_within_30) as avg_active_day,avg(question_cnt) as avg_question_cnt from user_profile group by university,gender;</span><br></pre></td></tr></table></figure>
-<p>12.取出平均发贴数低于5的学校或平均回帖数小于20的学校<br>聚合函数结果作为筛选条件时，不能用where，而是用having语法，配合重命名即可！！！！</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">university,</span><br><span class="line"> avg(question_cnt) as avg_question_cnt,</span><br><span class="line"> avg(answer_cnt) as avg_answer_cnt </span><br><span class="line"> from user_profile </span><br><span class="line"> group by university having avg_question_cnt &lt; <span class="number">5</span> or avg_answer_cnt &lt; <span class="number">20</span>;</span><br></pre></td></tr></table></figure>
-<p>13.不同大学的用户平均发帖情况，并按照平均发帖情况进行升序排列</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select university,</span><br><span class="line">    avg(question_cnt) as avg_question_cnt</span><br><span class="line">from user_profile</span><br><span class="line">group by university</span><br><span class="line">order by avg_question_cnt  </span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 倒序的话</span></span><br><span class="line">select university,</span><br><span class="line">    avg(question_cnt) as avg_question_cnt</span><br><span class="line">from user_profile</span><br><span class="line">group by university</span><br><span class="line">order by avg_question_cnt desc</span><br></pre></td></tr></table></figure>
-<p>14.联表查询</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">left JOIN 关联表</span><br><span class="line">select t1.device_id,question_id,result from question_practice_detail t1 left JOIN user_profile t2 on t1.device_id = t2.device_id <span class="type">where</span> <span class="variable">university</span> <span class="operator">=</span> <span class="string">&#x27;浙江大学&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/05/18/mysql_study/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
