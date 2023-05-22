@@ -162,6 +162,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/22/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0Git%E6%88%96Gitee/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WuShunZhou">
+      <meta itemprop="description" content="一个只想简单点的测试攻城狮">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuShunZhou">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/05/22/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0Git%E6%88%96Gitee/" class="post-title-link" itemprop="url">如何将本地项目上传到Git或Gitee</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-05-22 15:12:35 / 修改时间：07:26:27" itemprop="dateCreated datePublished" datetime="2023-05-22T15:12:35+00:00">2023-05-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%9E%E9%99%85%E6%93%8D%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">实际操作</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Git提交常用命令"><a href="#Git提交常用命令" class="headerlink" title="Git提交常用命令"></a>Git提交常用命令</h3><p>1、初始化git<br>git init<br>2、将项目的所有文件添加到缓存中<br>git add .<br>3、将缓存中的文件Commit到git库<br>git commit -m “init”<br>4、将本地的库链接到远程仓库<br>git remote add origin 远程仓库地址复制代码<br>5、拉取远程仓库代码<br>git pull origin master<br>6、提交代码<br>git push origin master</p>
+<h3 id="遇到问题的解决方法"><a href="#遇到问题的解决方法" class="headerlink" title="遇到问题的解决方法"></a>遇到问题的解决方法</h3><p>1、fatal: remote origin already exists.</p>
+<ul>
+<li>解决方法：<br>先输入 git remote rm origin<br>再输入 git remote add origin 远程仓库地址复制代码</li>
+</ul>
+<p>2、git pull 失败 ,提示：fatal: refusing to merge unrelated histories</p>
+<ul>
+<li>解决方法：</li>
+<li>方案一<br>git pull origin master –allow-unrelated-histories<br>后面加上 –allow-unrelated-histories ， 把两段不相干的 分支进行强行合并<br>后面再push就可以了</li>
+<li>方案二<br>git push -f -u origin master 强推至远程服务器    上述方式会强制删除远程仓库中冲突代码，即删除创建的README.md文件，不推荐</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/18/mysql_study/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -193,7 +271,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-05-22 06:58:31" itemprop="dateModified" datetime="2023-05-22T06:58:31+00:00">2023-05-22</time>
+                <time title="修改时间：2023-05-22 07:26:27" itemprop="dateModified" datetime="2023-05-22T07:26:27+00:00">2023-05-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -328,20 +406,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
