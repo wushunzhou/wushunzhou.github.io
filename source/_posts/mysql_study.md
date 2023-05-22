@@ -1,5 +1,5 @@
 ---
-title: “MySql学习”
+title: "MySql学习"
 date: 2023-05-18 17:03:22
 tags: MySql
 categories: 数据库
@@ -24,6 +24,7 @@ where age IS NOT NULL;
 ```java
  where gender = 'male' and gpa > '3.5';
 ```
+<!-- more -->
 6.找到学校为北大或GPA在3.7以上(不包括3.7)
 ```java
 where university = '北京大学' or gpa > '3.7';
@@ -85,5 +86,6 @@ order by avg_question_cnt desc
 left JOIN 关联表
 select t1.device_id,question_id,result from question_practice_detail t1 left JOIN user_profile t2 on t1.device_id = t2.device_id where university = '浙江大学';
 ```
+
 
 
