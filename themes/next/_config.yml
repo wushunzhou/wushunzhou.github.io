@@ -375,7 +375,7 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -997,6 +997,12 @@ vendors:
   # Internal version: 1.0.0
   # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   canvas_ribbon:
+    
+    
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+enabled: true
+
 
 # Assets
 css: css
