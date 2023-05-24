@@ -4,7 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3baaa43-a175-4af9-914c-4ca313868487" name="Changes" comment="" />
+    <list default="true" id="e3baaa43-a175-4af9-914c-4ca313868487" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2023/05/18/MySql学习/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2023/05/22/如何将本地项目上传到Git或Gitee/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2023/05/23/Git 自定义钩子/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2023/05/23/全新部署Jenkins之iOS篇-Mac/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2023/05/23/检查git-develop分支是否合入master分支/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/about/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/archives/2023/05/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/archives/2023/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/archives/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/categories/数据库/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/categories/随笔/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/algolia_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/apple-touch-icon-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/avatar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cc-by-nc-nd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cc-by-nc-sa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cc-by-nc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cc-by-nd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cc-by-sa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cc-by.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cc-zero.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/favicon-16x16-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/favicon-32x32-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/algolia-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bookmark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/local-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/motion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/next-boot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/schemes/muse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/schemes/pisces.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/anime.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/font-awesome/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/font-awesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/font-awesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/font-awesome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/velocity/velocity.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/velocity/velocity.ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tags/Git/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tags/Jenkins/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tags/MySql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/about/WechatIM.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/about/WechatIM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/next/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/next/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/next/layout/_partials/sidebar/site-overview.swig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/next/layout/_partials/sidebar/site-overview.swig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +66,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Q06Hx9eCAgnggJwIkDDWTPaK23" />
   <component name="ProjectLevelVcsManager">
@@ -27,7 +84,6 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -46,7 +102,23 @@
       <option name="presentableId" value="Default" />
       <updated>1684478068567</updated>
       <workItem from="1684478069748" duration="354000" />
+      <workItem from="1684823467135" duration="4996000" />
     </task>
+    <task id="LOCAL-00001" summary="add：博客地址">
+      <created>1684833410633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684833410633</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add：修改图标">
+      <created>1684833844022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684833844022</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -54,5 +126,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add：博客地址" />
+    <MESSAGE value="add：修改图标" />
+    <option name="LAST_COMMIT_MESSAGE" value="add：修改图标" />
   </component>
 </project>
