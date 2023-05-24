@@ -3,6 +3,7 @@ title: "MySql学习"
 date: 2023-05-18 17:03:22
 tags: MySql
 categories: 数据库
+top: 1
 ---
 1.查看前几条数据-  limit 
 2.查看范围 内的数据，包含等于
