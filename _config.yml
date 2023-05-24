@@ -103,13 +103,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 
-search:
-  path: search.xml
-  field: post	//post代表仅搜索博客文章，page代表搜索页面，all代表全部搜索
-  content: true
-  limit: 9999	//输入搜索字符上限
-
-
 # 设置博客单词统计
 symbols_count_time:
   # 文章字数统计
