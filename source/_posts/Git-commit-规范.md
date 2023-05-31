@@ -50,3 +50,4 @@ categories: 随笔
 
 作用域（scope）表示此次提交影响的范围。比如可以取值api，表明只影响了接口。
 
+![avatar](https://img.wuzhouboy.top/701b59d324821930c9e6a6b32806c736be2ed3ae86b8d-LPkZUl.jpg)
