@@ -14,7 +14,8 @@ since: 2020
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'https://wuzhouboy.top/'
-permalink: https://wuzhouboy.top/pretty/:hash/:second.html
+url: https://wuzhouboy.top/
+permalink: pretty/:hash/:second.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
