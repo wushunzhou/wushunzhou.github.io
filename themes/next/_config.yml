@@ -179,7 +179,8 @@ site_state: true
 social:
   # https://www.wcido.com/zh/fontawesome  -> 图标地址
   GitHub: https://github.com/wushunzhou || fab fa-github
-  Blog: https://wushunzhou.github.io/ || fab fa-blogger
+  MyBlog: https://wuzhouboy.top/ || fab fa-blogger
+  ChatGpt: https://gpt.wuzhouboy.top/ || fas fa-comments
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
