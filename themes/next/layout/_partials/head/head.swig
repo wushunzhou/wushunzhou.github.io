@@ -56,6 +56,7 @@
   {%- set pace_js_uri = theme.vendors.pace or next_vendors('pace/pace.min.js') %}
   <link rel="stylesheet" href="{{ pace_css_uri }}">
   <script src="{{ pace_js_uri }}"></script>
+  <script async src="https://mami.wuzhouboy.top/script.js" data-website-id="15f58e92-5055-4d25-8b07-a947e9946c6c"></script>
 {%- endif %}
 
 {{ next_config() }}
