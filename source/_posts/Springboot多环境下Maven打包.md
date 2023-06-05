@@ -1,8 +1,8 @@
 ---
 title: Springboot多环境下Maven打包
 date: 2023-06-01 13:32:40
-tags: SpringBoot
-categories: 后端
+tags: 后端
+categories: Springboot
 ---
 ### springboot多环境下maven打包
 

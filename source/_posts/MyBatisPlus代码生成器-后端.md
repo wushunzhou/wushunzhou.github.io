@@ -1,8 +1,8 @@
 ---
 title: MyBatisPlus代码生成器
 date: 2023-06-05 11:24:49
-tags: SpringBoot
-categories: 后端
+tags: 后端
+categories: SpringBoot
 top: 3
 ---
 

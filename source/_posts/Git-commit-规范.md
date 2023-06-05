@@ -1,8 +1,8 @@
 ---
 title: Git commit 规范
 date: 2023-05-29 11:37:21
-tags: Git
-categories: 随笔
+tags: 随笔
+categories: Git
 ---
 ## Commit 提交前缀规范
 

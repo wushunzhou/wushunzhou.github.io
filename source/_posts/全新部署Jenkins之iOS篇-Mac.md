@@ -1,8 +1,8 @@
 ---
 title: 全新部署Jenkins之iOS篇-Mac
 date: 2023-06-05 10:17:37
-tags: Git
-categories: 随笔
+tags: 随笔
+categories: Git
 top: 2
 ---
 
