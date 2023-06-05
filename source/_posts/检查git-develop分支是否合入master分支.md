@@ -3,7 +3,6 @@ title: 检查git develop分支是否合入master分支
 date: 2023-05-23 11:13:23
 tags: Git
 categories: 随笔
-link: check-git-devin-master
 ---
 ## 脚本使用方式：
 
