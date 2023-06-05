@@ -20,33 +20,20 @@
     var CONFIG = {"hostname":"wuzhouboy.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Jenkins官网安装方法：https:&#x2F;&#x2F;www.jenkins.io&#x2F;zh&#x2F;download&#x2F; 一、安装Jenkins1# 默认最新LTS版本，可以指定版本号 brew install jenkins-lts                接下来等待安装完成即可，默认端口为8080。一般8080端口会被占用，此时就需要修改端口号了。 二、修改Jenkins端口号的方法： 打开终端，cd 到Je">
+  <meta name="description" content="脚本使用方式：sh 脚本 $1 $2 检查 $2 是否最后一次commit是否执行合入到$1 eg：sh check_master_mr.sh master develop">
 <meta property="og:type" content="article">
-<meta property="og:title" content="全新部署Jenkins之iOS篇-Mac">
-<meta property="og:url" content="https://wuzhouboy.top/undefined/brand-new-jenkins-mac/37.html">
+<meta property="og:title" content="检查git develop分支是否合入master分支">
+<meta property="og:url" content="https://wuzhouboy.top/pretty/43d3df41a7a5/20230523111323.html">
 <meta property="og:site_name" content="WuShunZhou">
-<meta property="og:description" content="Jenkins官网安装方法：https:&#x2F;&#x2F;www.jenkins.io&#x2F;zh&#x2F;download&#x2F; 一、安装Jenkins1# 默认最新LTS版本，可以指定版本号 brew install jenkins-lts                接下来等待安装完成即可，默认端口为8080。一般8080端口会被占用，此时就需要修改端口号了。 二、修改Jenkins端口号的方法： 打开终端，cd 到Je">
+<meta property="og:description" content="脚本使用方式：sh 脚本 $1 $2 检查 $2 是否最后一次commit是否执行合入到$1 eg：sh check_master_mr.sh master develop">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/f4f3d60b-5a2a-4435-8356-683c4a27b277.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/77e78af4-fbbb-4a76-b4b2-05066fad4dc5.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/8941dbc8-b986-4a7c-a81b-708f33b9f5d9.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/16b77866-5ac2-4417-ad93-e447cf70cbfa.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/35ecabc7-810e-487a-b7ec-24e887f4889e.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/eeab1865-1e80-4484-a276-174bf5538788.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/d8b9361c-82b1-4553-acaa-14007781bb0b.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/50dc98e2-175c-443d-bcc2-c2e21beb8de3.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/037405eb-a0a4-4148-a349-ccf016001bcd.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/069d55a5-36d9-43be-931e-f716f1c2066f.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/89846e74-07cd-45b0-8ea5-5735b9c66548.png">
-<meta property="og:image" content="https://img.wuzhouboy.top/blog/4543a026-8d9d-4be3-9d5f-5aa30500d60e.png">
-<meta property="article:published_time" content="2023-06-05T10:17:37.000Z">
-<meta property="article:modified_time" content="2023-06-05T06:13:03.550Z">
+<meta property="article:published_time" content="2023-05-23T11:13:23.000Z">
+<meta property="article:modified_time" content="2023-06-05T06:22:36.208Z">
 <meta property="article:author" content="WuShunZhou">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img.wuzhouboy.top/blog/f4f3d60b-5a2a-4435-8356-683c4a27b277.png">
 
-<link rel="canonical" href="https://wuzhouboy.top/undefined/brand-new-jenkins-mac/37.html">
+<link rel="canonical" href="https://wuzhouboy.top/pretty/43d3df41a7a5/20230523111323.html">
 
 
 <script id="page-configurations">
@@ -59,7 +46,7 @@
   };
 </script>
 
-  <title>全新部署Jenkins之iOS篇-Mac | WuShunZhou</title>
+  <title>检查git develop分支是否合入master分支 | WuShunZhou</title>
   
 
 
@@ -179,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wuzhouboy.top/undefined/brand-new-jenkins-mac/37.html">
+    <link itemprop="mainEntityOfPage" href="https://wuzhouboy.top/pretty/43d3df41a7a5/20230523111323.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -192,27 +179,27 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/brand-new-jenkins-mac" class="post-title-link post-title-link-external" itemprop="url">全新部署Jenkins之iOS篇-Mac<i class="fa fa-external-link-alt"></i></a>
-          
+          检查git develop分支是否合入master分支
         </h1>
 
         <div class="post-meta">
 
-          
-            <i class="fa fa-angle-double-right"></i>
-            <font color=7D26CD>置顶</font>
-            <span class="post-meta-divider">|</span>
           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-06-05 10:17:37 / 修改时间：06:13:03" itemprop="dateCreated datePublished" datetime="2023-06-05T10:17:37+00:00">2023-06-05</time>
+              <time title="创建时间：2023-05-23 11:13:23" itemprop="dateCreated datePublished" datetime="2023-05-23T11:13:23+00:00">2023-05-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-06-05 06:22:36" itemprop="dateModified" datetime="2023-06-05T06:22:36+00:00">2023-06-05</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -229,14 +216,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.3k</span>
+              <span>468</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -248,79 +235,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Jenkins官网安装方法：<a target="_blank" rel="noopener" href="https://www.jenkins.io/zh/download/">https://www.jenkins.io/zh/download/</a></p>
-<h2 id="一、安装Jenkins"><a href="#一、安装Jenkins" class="headerlink" title="一、安装Jenkins"></a>一、安装Jenkins</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># 默认最新LTS版本，可以指定版本号 brew install jenkins-lts              </span><br></pre></td></tr></table></figure>
-
-<p>接下来等待安装完成即可，默认端口为8080。一般8080端口会被占用，此时就需要修改端口号了。</p>
-<h2 id="二、修改Jenkins端口号的方法："><a href="#二、修改Jenkins端口号的方法：" class="headerlink" title="二、修改Jenkins端口号的方法："></a>二、修改Jenkins端口号的方法：</h2><ol>
-<li>打开终端，cd 到Jenkins的安装目录（即jenkins.war所在目录），如：</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/opt/jenkins-lts/libexec/</span><br></pre></td></tr></table></figure>
-
+        <h2 id="脚本使用方式："><a href="#脚本使用方式：" class="headerlink" title="脚本使用方式："></a>脚本使用方式：</h2><p>sh 脚本 $1 $2</p>
+<p>检查 $2 是否最后一次commit是否执行合入到$1</p>
+<p>eg：sh check_master_mr.sh master develop</p>
 <span id="more"></span>
 
-<ol start="2">
-<li>执行命令：“java -jar jenkins.war –ajp13Port&#x3D;-1 –httpPort&#x3D;9099” 执行完成后。</li>
-</ol>
-<p>如果出现以下画面。表示端口修改成功，并同时启动了Jenkins服务。<br><img src="https://img.wuzhouboy.top/blog/f4f3d60b-5a2a-4435-8356-683c4a27b277.png"></p>
-<h2 id="三、启动-x2F-关闭Jenkins服务"><a href="#三、启动-x2F-关闭Jenkins服务" class="headerlink" title="三、启动&#x2F;关闭Jenkins服务"></a>三、启动&#x2F;关闭Jenkins服务</h2><ol>
-<li><p>启动Jenkins服务命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start jenkins</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>停止Jenkins服务命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net stop jenkins</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="四、首次登陆Jenkins需要通过密钥登陆，随后创建管理员账号"><a href="#四、首次登陆Jenkins需要通过密钥登陆，随后创建管理员账号" class="headerlink" title="四、首次登陆Jenkins需要通过密钥登陆，随后创建管理员账号"></a>四、首次登陆Jenkins需要通过密钥登陆，随后创建管理员账号</h2><p>1、打开web界面输入密钥（如下图的这串字符串）<br><img src="https://img.wuzhouboy.top/blog/77e78af4-fbbb-4a76-b4b2-05066fad4dc5.png"></p>
-<p>2、创建管理员账号</p>
-<p><img src="https://img.wuzhouboy.top/blog/8941dbc8-b986-4a7c-a81b-708f33b9f5d9.png"></p>
-<h2 id="五、安装相应的插件。"><a href="#五、安装相应的插件。" class="headerlink" title="五、安装相应的插件。"></a>五、安装相应的插件。</h2><p>1、直接选择推荐插件进行下载安装<br><img src="https://img.wuzhouboy.top/blog/16b77866-5ac2-4417-ad93-e447cf70cbfa.png"></p>
-<p>2、安装iOS打包必备的插件</p>
-<p>路径：Manage Jenkins-&gt; Manage Plugins -&gt;进入到插件管理，搜索以下2个必备插件-&gt;安装重启Jenkins使之生效</p>
-<p><strong>1、</strong><a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://updates.jenkins.io/download/plugins/kpp-management-plugin/1.0.0/kpp-management-plugin.hpi"><strong>Keychains and Provisioning Profiles Management</strong></a><strong>（管理本地的keychain和iOS证书的插件）</strong></p>
-<p><strong>2、</strong><a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://updates.jenkins.io/download/plugins/xcode-plugin/2.0.4/xcode-plugin.hpi"><strong>Xcode integration</strong></a> <strong>（用于xcode构建</strong>）</p>
-<p><img src="https://img.wuzhouboy.top/blog/35ecabc7-810e-487a-b7ec-24e887f4889e.png"></p>
-<h2 id="六、新增凭证"><a href="#六、新增凭证" class="headerlink" title="六、新增凭证"></a>六、新增凭证</h2><p><img src="https://img.wuzhouboy.top/blog/eeab1865-1e80-4484-a276-174bf5538788.png"></p>
-<h2 id="七、新建流水线，接下来的操作就是流水线-打包脚本「END」"><a href="#七、新建流水线，接下来的操作就是流水线-打包脚本「END」" class="headerlink" title="七、新建流水线，接下来的操作就是流水线+打包脚本「END」"></a>七、新建流水线，接下来的操作就是流水线+打包脚本「END」</h2><p><img src="https://img.wuzhouboy.top/blog/d8b9361c-82b1-4553-acaa-14007781bb0b.png"></p>
-<h2 id="八、Jenkins创建一个用户token，如下图，用户没有token"><a href="#八、Jenkins创建一个用户token，如下图，用户没有token" class="headerlink" title="八、Jenkins创建一个用户token，如下图，用户没有token"></a>八、Jenkins创建一个用户token，如下图，用户没有token</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xujiamin0022016/article/details/103484563">https://blog.csdn.net/xujiamin0022016/article/details/103484563</a></p>
-<p><img src="https://img.wuzhouboy.top/blog/50dc98e2-175c-443d-bcc2-c2e21beb8de3.png"></p>
-<p>解决方法：</p>
-<p><img src="https://img.wuzhouboy.top/blog/037405eb-a0a4-4148-a349-ccf016001bcd.png"></p>
-<h2 id="九、QA补充"><a href="#九、QA补充" class="headerlink" title="九、QA补充"></a>九、QA补充</h2><p># Q: LTS版本与jenkins正常版本STS的区别：</p>
-<p>支持的时间以及稳定性不同，正常我们应该使用LTS为好，理由如下：</p>
-<p>1、所有LTS版本(12.04和更高版本)在桌面和服务器上都支持五年。</p>
-<p>2、所有正常版本(13.04及更高版本)仅支持9个月。</p>
-<p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39692830/article/details/116908912">https://blog.csdn.net/weixin_39692830/article/details/116908912</a></p>
-<p># Q： 打包出现如下报错：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">no known implementation of class jenkins.tasks.SimpleBuildWrapper is named BuildUser</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">merge_destination_branch=$1</span><br><span class="line">merge_source_branch=$2</span><br><span class="line"></span><br><span class="line">merge_base=$(git merge-base $merge_destination_branch $merge_source_branch)</span><br><span class="line">merge_source_current_commit=$(git rev-parse $merge_source_branch)</span><br><span class="line">if [[ $merge_base = $merge_source_current_commit ]]</span><br><span class="line">then</span><br><span class="line">    echo $merge_source_branch is merged into $merge_destination_branch</span><br><span class="line">    exit 0</span><br><span class="line">else</span><br><span class="line">    echo $merge_source_branch is not merged into $merge_destination_branch</span><br><span class="line">    exit 1</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.wuzhouboy.top/blog/069d55a5-36d9-43be-931e-f716f1c2066f.png"></p>
-<p>解决方法：这里因为jenkins没有安装plugin(<a target="_blank" rel="noopener" href="http://wiki.jenkins-ci.org/display/JENKINS/Build+User+Vars+Plugin">user build vars plugin</a>) 一个环境变量插件</p>
-<p># Q： 如何查看jdk安装路径以及版本：</p>
-<p><img src="https://img.wuzhouboy.top/blog/89846e74-07cd-45b0-8ea5-5735b9c66548.png"></p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/h--d/p/11186529.html"><strong>【Linux】Jenkins以war包运行及开机启动配置（四）</strong></a></p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/h--d/p/11186529.html">https://www.cnblogs.com/h--d/p/11186529.html</a></p>
-<p>账号分配并设置权限：</p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f1d378596a67">https://www.jianshu.com/p/f1d378596a67</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wanglei_storage/article/details/78339409">https://blog.csdn.net/wanglei_storage/article/details/78339409</a></p>
-<p>jenkins 跨域请求403问题描述</p>
-<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000040706914">https://segmentfault.com/a/1190000040706914</a></p>
-<p>解决方法：</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/hiXavier/article/details/109047457">https://blog.csdn.net/hiXavier/article/details/109047457</a></p>
-<p>启动时</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar -Dhudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION=true  /usr/local/jenkins/jenkins.war --httpPort=8088 -DJENKINS_HOME=/usr/local/jenkins --webroot=/usr/local/jenkins/war --logfile=/usr/local/jenkins/jenkins.log &amp;</span><br></pre></td></tr></table></figure>
-
-<p>正确使用java版本启动</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/bin/java -jar -Dhudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION=true /usr/local/opt/jenkins-lts/libexec/jenkins.war --ajp13Port=-1 --httpPort=9099</span><br></pre></td></tr></table></figure>
-
-
-
-<p><img src="https://img.wuzhouboy.top/blog/4543a026-8d9d-4be3-9d5f-5aa30500d60e.png"></p>
-<p>jdk 安装</p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/6273e7ab0c56">https://www.jianshu.com/p/6273e7ab0c56</a></p>
-<p>jdk切换使用</p>
-<p><a target="_blank" rel="noopener" href="https://www.cjavapy.com/article/91/">https://www.cjavapy.com/article/91/</a></p>
-<p><strong>后台启动：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/bin/java -jar -Dhudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION=true /usr/local/opt/jenkins-lts/libexec/jenkins.war --ajp13Port=-1 --httpPort=9099 &amp;              </span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -362,7 +283,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://wuzhouboy.top/undefined/brand-new-jenkins-mac/37.html" title="全新部署Jenkins之iOS篇-Mac">https://wuzhouboy.top/undefined/brand-new-jenkins-mac/37.html</a>
+    <a href="https://wuzhouboy.top/pretty/43d3df41a7a5/20230523111323.html" title="检查git develop分支是否合入master分支">https://wuzhouboy.top/pretty/43d3df41a7a5/20230523111323.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -382,12 +303,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/undefined/springboot-multi-environment/40.html" rel="prev" title="Springboot多环境下Maven打包">
-      <i class="fa fa-chevron-left"></i> Springboot多环境下Maven打包
+    <a href="/pretty/e76f0c0269b6/20230523105629.html" rel="prev" title="Git 自定义钩子">
+      <i class="fa fa-chevron-left"></i> Git 自定义钩子
     </a></div>
       <div class="post-nav-item">
-    <a href="/undefined/mybatis-plus-code/49.html" rel="next" title="MyBatisPlus代码生成器">
-      MyBatisPlus代码生成器 <i class="fa fa-chevron-right"></i>
+    <a href="/pretty/60e5f65175cb/20230524114416.html" rel="next" title="打印高达">
+      打印高达 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -447,7 +368,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85Jenkins"><span class="nav-number">1.</span> <span class="nav-text">一、安装Jenkins</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%BF%AE%E6%94%B9Jenkins%E7%AB%AF%E5%8F%A3%E5%8F%B7%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">二、修改Jenkins端口号的方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%90%AF%E5%8A%A8-x2F-%E5%85%B3%E9%97%ADJenkins%E6%9C%8D%E5%8A%A1"><span class="nav-number">3.</span> <span class="nav-text">三、启动&#x2F;关闭Jenkins服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%A6%96%E6%AC%A1%E7%99%BB%E9%99%86Jenkins%E9%9C%80%E8%A6%81%E9%80%9A%E8%BF%87%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86%EF%BC%8C%E9%9A%8F%E5%90%8E%E5%88%9B%E5%BB%BA%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7"><span class="nav-number">4.</span> <span class="nav-text">四、首次登陆Jenkins需要通过密钥登陆，随后创建管理员账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%AE%89%E8%A3%85%E7%9B%B8%E5%BA%94%E7%9A%84%E6%8F%92%E4%BB%B6%E3%80%82"><span class="nav-number">5.</span> <span class="nav-text">五、安装相应的插件。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E6%96%B0%E5%A2%9E%E5%87%AD%E8%AF%81"><span class="nav-number">6.</span> <span class="nav-text">六、新增凭证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E6%96%B0%E5%BB%BA%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%8C%E6%8E%A5%E4%B8%8B%E6%9D%A5%E7%9A%84%E6%93%8D%E4%BD%9C%E5%B0%B1%E6%98%AF%E6%B5%81%E6%B0%B4%E7%BA%BF-%E6%89%93%E5%8C%85%E8%84%9A%E6%9C%AC%E3%80%8CEND%E3%80%8D"><span class="nav-number">7.</span> <span class="nav-text">七、新建流水线，接下来的操作就是流水线+打包脚本「END」</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AB%E3%80%81Jenkins%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7token%EF%BC%8C%E5%A6%82%E4%B8%8B%E5%9B%BE%EF%BC%8C%E7%94%A8%E6%88%B7%E6%B2%A1%E6%9C%89token"><span class="nav-number">8.</span> <span class="nav-text">八、Jenkins创建一个用户token，如下图，用户没有token</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D%E3%80%81QA%E8%A1%A5%E5%85%85"><span class="nav-number">9.</span> <span class="nav-text">九、QA补充</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">脚本使用方式：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
