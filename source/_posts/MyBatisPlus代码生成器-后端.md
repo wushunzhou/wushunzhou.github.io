@@ -6,8 +6,6 @@ categories: SpringBoot
 top: 3
 ---
 
-# MyBatisPlus代码生成器
-
 代码参考 http://gitee.com/wushunzhou/mall-tiny.git
 
 话不多说，直接上代码，定义为MyBatisPlusGenerator类：
