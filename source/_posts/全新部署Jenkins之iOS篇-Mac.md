@@ -4,6 +4,7 @@ date: 2023-06-05 10:17:37
 tags: Git
 categories: 随笔
 top: 2
+link: brand-new-jenkins-mac
 ---
 
 Jenkins官网安装方法：https://www.jenkins.io/zh/download/
