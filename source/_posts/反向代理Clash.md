@@ -10,3 +10,5 @@ categories: 其他
 科学上网，可以注册使用机场：https://s7pdg-7jxp0-9stoq-mc1wy.glados.space
 
 机器人签到：https://github.com/wushunzhou/glados#glados_checkin
+
+有需要，请点开主页，WeChat联系。
