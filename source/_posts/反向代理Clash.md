@@ -11,4 +11,4 @@ categories: 其他
 
 机器人签到：https://github.com/wushunzhou/glados#glados_checkin
 
-有需要，请点开主页，WeChat联系。(机器人签到私有项目)
+如果有需要，请点开主页，WeChat联系。(机器人签到私有项目)
