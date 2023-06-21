@@ -179,10 +179,10 @@ site_state: true
 social:
   # https://www.wcido.com/zh/fontawesome  -> 图标地址
   GitHub: https://github.com/wushunzhou || fab fa-github
-  MyBlog: https://wuzhouboy.top/ || fab fa-blogger
+  Blog: https://wuzhouboy.top/ || fab fa-blogger
   ChatGpt: https://gpt.wuzhouboy.top/ || fas fa-comments
-  MyDisk: https://one.wuzhouboy.top/zh-CN/ || fas fa-hdd
-  MyApi: https://api.wuzhouboy.top/search?q=%E5%95%8A%E5%AF%B9%E5%AF%B9%E5%AF%B9%E6%98%AF%E4%BB%80%E4%B9%88%E6%A2%97&max_results=3 || fab fa-servicestack
+  Disk: https://one.wuzhouboy.top/zh-CN/ || fas fa-hdd
+  Api: https://api.wuzhouboy.top/search?q=%E5%95%8A%E5%AF%B9%E5%AF%B9%E5%AF%B9%E6%98%AF%E4%BB%80%E4%B9%88%E6%A2%97&max_results=3 || fab fa-servicestack
 #  BlogStat: https://mami.wuzhouboy.top/share/KSjEoP8TMnS2XvMj/blog || fas fa-comments
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
